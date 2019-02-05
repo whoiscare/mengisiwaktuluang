@@ -9,7 +9,7 @@ move(){
 	str=$1
 	str1=$(printf "$str" | sed "s/${delim}.*//g")
 	str2=$(printf "$str" | sed "s/.*${delim}//g")
-	echo "${email}${sptbaru}${pass}" >> $result
+	echo "${str2}${sptbaru}${str1}" >> $result
 }
 
 clear
